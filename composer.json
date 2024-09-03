@@ -27,6 +27,7 @@
         "netresearch/jsonmapper": "^4.4",
         "phpdocumentor/reflection-docblock": "^5.4",
         "runtime/frankenphp-symfony": "^0.2.0",
+        "sensiolabs/typescript-bundle": "^0.1.4",
         "smorken/ext-http": "^5.0",
         "symfony/asset": "7.1.*",
         "symfony/asset-mapper": "7.1.*",
