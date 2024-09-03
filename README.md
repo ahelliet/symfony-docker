@@ -49,3 +49,15 @@ Symfony Docker is available under the MIT License.
 ## Credits
 
 Created by [Kévin Dunglas](https://dunglas.dev), co-maintained by [Maxime Helias](https://twitter.com/maxhelias) and sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).
+
+## Compile TypeScript files
+
+To compile the assets when a file changes:
+```shell
+php bin/console typescript:build --watch
+```
+
+To compile the assets once:
+```shell
+php bin/console asset-map:compile
+```
