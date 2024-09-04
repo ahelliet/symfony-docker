@@ -106,12 +106,10 @@
             "importmap:install": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts",
-            "php bin/console asset-map:compile"
+            "@auto-scripts"
         ],
         "post-update-cmd": [
-            "@auto-scripts",
-            "php bin/console asset-map:compile"
+            "@auto-scripts"
         ]
     },
     "conflict": {
@@ -134,6 +132,8 @@
         "phpstan/phpstan": "^1.12",
         "phpstan/phpstan-symfony": "^1.4",
         "phpunit/phpunit": "^11.3",
+        "rector/rector": "^1.2",
+        "squizlabs/php_codesniffer": "*",
         "symfony/browser-kit": "7.1.*",
         "symfony/css-selector": "7.1.*",
         "symfony/debug-bundle": "7.1.*",

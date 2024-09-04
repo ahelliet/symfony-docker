@@ -52,12 +52,34 @@ Created by [Kévin Dunglas](https://dunglas.dev), co-maintained by [Maxime Helia
 
 ## Compile TypeScript files
 
-To compile the assets when a file changes:
+To compile the assets when a file changes (inside the php container):
 ```shell
 php bin/console typescript:build --watch
 ```
 
-To compile the assets once:
+To compile the assets once (inside the php container):
 ```shell
 php bin/console asset-map:compile
+```
+
+## Php CS Fixer
+
+To run the Php CS Fixer (inside the php container):
+```shell
+tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src
+```
+
+## PHP CodeSniffer
+
+To run the PHP CodeSniffer (inside the php container):
+```shell
+./vendor/bin/phpcs src
+./vendor/bin/phpcbf src
+```
+
+## Rector
+
+To run the Rector (inside the php container):
+```shell
+vendor/bin/rector process src
 ```
