@@ -79,7 +79,12 @@ To run the PHP CodeSniffer (inside the php container):
 
 ## Rector
 
-To run the Rector (inside the php container):
+To run the Rector (inside the php container) and preview changes:
 ```shell
-vendor/bin/rector process src
+vendor/bin/rector process --dry-run
+```
+
+To run the Rector (inside the php container) and apply changes:
+```shell
+vendor/bin/rector process
 ```
